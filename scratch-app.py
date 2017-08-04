@@ -10,7 +10,7 @@ def quit(app):
     Gtk.main_quit()
     server.terminate()
 
-server = Popen(["npm start"], cwd="/app/lib/node_modules/scratch-gui")
+server = Popen(["npm", "start"], cwd="/app/lib/node_modules/scratch-gui")
 
 webview = WebKit2.WebView()
 webview.open("localhost:8601")
