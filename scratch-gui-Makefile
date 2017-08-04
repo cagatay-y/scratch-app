@@ -1,0 +1,6 @@
+all:
+	true
+
+install:
+	npm install
+	cp -r . /app/lib/node_modules/scratch-gui

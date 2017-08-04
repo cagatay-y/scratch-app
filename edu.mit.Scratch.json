@@ -1,0 +1,48 @@
+{
+    "app-id": "edu.mit.Scratch",
+    "runtime": "org.gnome.Platform",
+    "sdk": "org.gnome.Sdk",
+    "finish-args": [
+        "--share=network"
+    ],
+    "build-options": {
+        "build-args": [
+            "--share=network"
+        ]
+    },
+    "modules": [
+        {
+            "name": "scratch-app",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/cagatay-y/scratch-app.git"
+                }
+            ]
+        },
+        {
+            "name": "nodejs",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/nodejs/node.git"
+                }
+            ]
+        },
+        {
+            "name": "scratch-gui",
+            "no-autogen": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/LLK/scratch-gui.git"
+                },
+                {
+                    "type": "file",
+                    "path": "scratch-gui-Makefile",
+                    "dest-filename": "Makefile"
+                }
+            ]
+        }
+    ]
+}
