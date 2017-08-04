@@ -12,16 +12,6 @@
     },
     "modules": [
         {
-            "name": "scratch-app",
-            "no-autogen": true,
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/cagatay-y/scratch-app.git"
-                }
-            ]
-        },
-        {
             "name": "nodejs",
             "sources": [
                 {
