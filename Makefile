@@ -1,6 +1,6 @@
 all:
-    true
+	true
 
 install:
-    install /app/bin/ scratch-app.py
+	install /app/bin/ scratch-app.py
     
